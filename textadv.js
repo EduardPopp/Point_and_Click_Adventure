@@ -513,7 +513,7 @@ function check_inventar() {
         var InventarObject = {
             "name":"Glassplitter",
             "desc":"ein Glassplitter aus Waggon 1 mit einer 9 drauf.",
-            "image": 'assets/glas.png'
+            "image": 'assets/uploaded/glas.png'
         }
         parsed.push(InventarObject);
         localStorage.setItem("item1check", "1");
@@ -523,7 +523,7 @@ function check_inventar() {
         var InventarObject = {
             "name":"Serviette",
             "desc":"Eine Serviette aus Waggon 2 auf der eine 4 steht.",
-            "image": 'assets/serviette.png'
+            "image": 'assets/uploaded/serviette.png'
         }
         parsed.push(InventarObject);
         localStorage.setItem("item2check", "1");
@@ -533,7 +533,7 @@ function check_inventar() {
         var InventarObject = {
             "name":"Siegelwachsreste",
             "desc":"Siegelwachs aus Waggon 4 zum versiegeln von Briefen und fläschchen, mit einer 6 gekennzeichnet.",
-            "image": 'assets/siegelwachs.png'
+            "image": 'assets/uploaded/siegelwachs.png'
         }
         parsed.push(InventarObject);
         localStorage.setItem("item3check", "1");
@@ -543,7 +543,7 @@ function check_inventar() {
         var InventarObject = {
             "name":"Lederhandschuh",
             "desc":"ein Lederhandschuh aus dem Tresor im Schlafwaggon.",
-            "image": 'assets/leder_handschuh_small.png' 
+            "image": 'assets/uploaded/leder_handschuh_small.png' 
         }
         parsed.push(InventarObject);
         localStorage.setItem("item4check", "1");
@@ -598,5 +598,5 @@ function tresor_offen_zu() {
 
 function Hauptmenue() {
     localStorage.clear();
-    window.location.href="Index.html"
+    window.location.href="index.html"
 }
