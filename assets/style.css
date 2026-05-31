@@ -25,46 +25,46 @@ body {
 /*Hintergrundbilder jeder Szene wird hier festgelegt*/
 /****************************************************/
 #startmenu {
-    background-image: url(assets/uploaded/startmenu.jpeg);
+    background-image: url(uploaded/startmenu.jpeg);
     background-size: cover;
 }
 
 #Karte {
-    background-image: url(assets/uploaded/Karte_Spiel.png);
+    background-image: url(uploaded/Karte_Spiel.png);
 }
 
 #namens_plakette {
-    background-image: url(assets/uploaded/startmenuname.jpg);
+    background-image: url(uploaded/startmenuname.jpg);
     background-size: cover;
 }
 
 #Einleitung {
-    background-image: url(assets/uploaded/startmenu.jpeg);
+    background-image: url(uploaded/startmenu.jpeg);
     background-size: cover;
 }
 
 #erster_waggon {
-    background-image: url(assets/Wagen1.jpeg);
+    background-image: url(Wagen1.jpeg);
     background-size: cover;
 }
 
 #secndWag {
-    background-image: url(assets/Wagen2.jpeg);
+    background-image: url(Wagen2.jpeg);
     background-size: cover; 
 }
 
 #Waggondrei {
-    background-image: url(assets/Wagen3.jpeg);
+    background-image: url(Wagen3.jpeg);
     background-size: cover; 
 }
 
 #Waggonvier {
-    background-image: url(assets/Wagen4.jpeg);
+    background-image: url(Wagen4.jpeg);
     background-size: cover; 
 }
 
 #Waggonfuenf {
-    background-image: url(assets/Wagen5.jpeg);
+    background-image: url(Wagen5.jpeg);
     background-size: cover; 
 }
 
@@ -164,14 +164,14 @@ header {
     background-color: transparent;
     font-size: small;
     border: none;
-    background-image: url(assets/uploaded/pinKarte.png);
+    background-image: url(uploaded/pinKarte.png);
     background-repeat: no-repeat;
     height: 50px;
     width: 50px;
 }
 
 .pinnadel:hover {
-    background-image: url(assets/uploaded/pinKarte_hover.png);
+    background-image: url(uploaded/pinKarte_hover.png);
     cursor: pointer;
 }
 
@@ -179,14 +179,14 @@ header {
     background-color: transparent;
     font-size: small;
     border: none;
-    background-image: url(assets/uploaded/pinKarte.png);
+    background-image: url(uploaded/pinKarte.png);
     background-repeat: no-repeat;
     height: 50px;
     width: 50px;
 }
 
 .pinnadel_deaktiviert:hover {
-    background-image: url(assets/uploaded/pinKarte_deaktiviert.png);
+    background-image: url(uploaded/pinKarte_deaktiviert.png);
     cursor: pointer;
 }
 /****************************************************/
@@ -438,7 +438,7 @@ backbuttonsecsoon :nth-child(1) {
     padding-top: 60px;
     padding-left: 100px;
     flex-wrap: nowrap;
-    background-image: url(assets/uploaded/Notizbuch_offen.jpeg);
+    background-image: url(uploaded/Notizbuch_offen.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
@@ -549,7 +549,7 @@ backbuttonsecsoon :nth-child(1) {
 }
 
 .steuerung_offener_tresor {
-    background-image: url(assets/tresor_offen.jpeg);
+    background-image: url(tresor_offen.jpeg);
     background-size: cover;
     width: 1200px;
     height: 800px;
@@ -632,7 +632,7 @@ story :nth-child(7) { /*Tresor minispiel*/
 }
 
 .noteBook {
-    background-image: url(assets/uploaded/Notizbuch.png);
+    background-image: url(uploaded/Notizbuch.png);
     background-size: cover;
     background-color: transparent;
     height: 100px;
@@ -641,7 +641,7 @@ story :nth-child(7) { /*Tresor minispiel*/
 }
 
 .noteBook:hover {
-    background-image: url(assets/uploaded/Notizbuch_hover.png);
+    background-image: url(uploaded/Notizbuch_hover.png);
     background-size: cover;
     background-color: transparent;
     cursor: pointer;
@@ -651,7 +651,7 @@ story :nth-child(7) { /*Tresor minispiel*/
 }
 
 .glas {
-    background-image: url(assets/uploaded/glas.png);
+    background-image: url(uploaded/glas.png);
     background-size: cover;
     background-color: transparent;
     height: 50px;
@@ -660,7 +660,7 @@ story :nth-child(7) { /*Tresor minispiel*/
 }
 
 .glas:hover {
-    background-image: url(assets/uploaded/glas.png);
+    background-image: url(uploaded/glas.png);
     background-size: cover;
     background-color: transparent;
     height: 50px;
@@ -670,7 +670,7 @@ story :nth-child(7) { /*Tresor minispiel*/
 }
 
 .fragefenster {
-    background-image: url(assets/uploaded/fragezeichen.png);
+    background-image: url(uploaded/fragezeichen.png);
     background-size: cover;
     background-color: transparent;
     height: 50px;
@@ -791,7 +791,7 @@ storyzwei :nth-child(7) { /*Zurück zum vorherigen Waggon*/
 }
 
 .serviette {
-    background-image: url(assets/uploaded/serviette.png);
+    background-image: url(uploaded/serviette.png);
     background-size: cover;
     background-color: transparent;
     height: 50px;
@@ -800,7 +800,7 @@ storyzwei :nth-child(7) { /*Zurück zum vorherigen Waggon*/
 }
 
 .serviette:hover {
-    background-image: url(assets/uploaded/serviette.png);
+    background-image: url(uploaded/serviette.png);
     background-size: cover;
     background-color: transparent;
     height: 50px;
@@ -904,7 +904,7 @@ storyvier :nth-child(6) { /*siegelwachs*/
 }
 
 .siegel {
-    background-image: url(assets/uploaded/siegelwachs.png);
+    background-image: url(uploaded/siegelwachs.png);
     background-size: cover;
     background-color: transparent;
     height: 50px;
@@ -913,7 +913,7 @@ storyvier :nth-child(6) { /*siegelwachs*/
 }
 
 .siegel:hover {
-    background-image: url(assets/uploaded/siegelwachs.png);
+    background-image: url(uploaded/siegelwachs.png);
     background-size: cover;
     background-color: transparent;
     height: 50px;
@@ -923,7 +923,7 @@ storyvier :nth-child(6) { /*siegelwachs*/
 }
 
 .handschuh {
-    background-image: url(assets/uploaded/leder_handschuh.png);
+    background-image: url(uploaded/leder_handschuh.png);
     background-size: cover;
     background-color: transparent;
     position: relative;
@@ -935,7 +935,7 @@ storyvier :nth-child(6) { /*siegelwachs*/
 }
 
 .handschuh:hover {
-    background-image: url(assets/uploaded/leder_handschuh.png);
+    background-image: url(uploaded/leder_handschuh.png);
     background-size: cover;
     background-color: transparent;
     height: 300px;
@@ -1089,61 +1089,61 @@ endstation :nth-child(4) { /*Story3*/
     /*Hintergrundbilder jeder Szene wird hier festgelegt*/
     /****************************************************/
     #startmenu {
-        background-image: url(assets/uploaded/startmenu.jpeg);
+        background-image: url(uploaded/startmenu.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #Karte {
-        background-image: url(assets/uploaded/Karte_Spiel_1440.png);
+        background-image: url(uploaded/Karte_Spiel_1440.png);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #namens_plakette {
-        background-image: url(assets/uploaded/startmenuname.jpg);
+        background-image: url(uploaded/startmenuname.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #Einleitung {
-        background-image: url(assets/uploaded/startmenu.jpeg);
+        background-image: url(uploaded/startmenu.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #erster_waggon {
-        background-image: url(assets/Wagen1.jpeg);
+        background-image: url(Wagen1.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     #secndWag {
-        background-image: url(assets/Wagen2.jpeg);
+        background-image: url(Wagen2.jpeg);
         background-size: cover; 
         background-repeat: no-repeat;
     }
 
     #Waggondrei {
-        background-image: url(assets/Wagen3.jpeg);
+        background-image: url(Wagen3.jpeg);
         background-size: cover; 
         background-repeat: no-repeat;
     }
 
     #Waggonvier {
-        background-image: url(assets/Wagen4.jpeg);
+        background-image: url(Wagen4.jpeg);
         background-size: cover; 
         background-repeat: no-repeat;
     }
 
     #Waggonfuenf {
-        background-image: url(assets/Wagen3.jpeg);
+        background-image: url(Wagen5.jpeg);
         background-size: cover; 
         background-repeat: no-repeat;
     }
 
     #endstation {
-        background-image: url(assets/startmenu.jpeg);
+        background-image: url(uploaded/startmenu.jpeg);
         background-size: cover; 
         background-repeat: no-repeat;
     }
@@ -1177,14 +1177,14 @@ endstation :nth-child(4) { /*Story3*/
         background-color: transparent;
         font-size: small;
         border: none;
-        background-image: url(assets/uploaded/pinKarte.png);
+        background-image: url(uploaded/pinKarte.png);
         background-repeat: no-repeat;
         height: 50px;
         width: 50px;
     }
 
     .pinnadel:hover {
-        background-image: url(assets/uploaded/pinKarte_hover.png);
+        background-image: url(uploaded/pinKarte_hover.png);
         cursor: pointer;
     }
 
@@ -1192,14 +1192,14 @@ endstation :nth-child(4) { /*Story3*/
         background-color: transparent;
         font-size: small;
         border: none;
-        background-image: url(assets/uploaded/pinKarte.png);
+        background-image: url(uploaded/pinKarte.png);
         background-repeat: no-repeat;
         height: 50px;
         width: 50px;
     }
 
     .pinnadel_deaktiviert:hover {
-        background-image: url(assets/uploaded/pinKarte_deaktiviert.png);
+        background-image: url(uploaded/pinKarte_deaktiviert.png);
         cursor: pointer;
     }
     /****************************************************/
@@ -1414,7 +1414,7 @@ endstation :nth-child(4) { /*Story3*/
         padding-top: 60px;
         padding-left: 100px;
         flex-wrap: nowrap;
-        background-image: url(assets/uploaded/Notizbuch_offen.jpeg);
+        background-image: url(uploaded/Notizbuch_offen.jpeg);
         background-size: 100%;
         background-repeat: no-repeat;
         position: relative;
@@ -1526,7 +1526,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .steuerung_offener_tresor {
-        background-image: url(assets/tresor_offen.jpeg);
+        background-image: url(tresor_offen.jpeg);
         background-size: cover;
         width: 1200px;
         height: 800px;
@@ -1608,7 +1608,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .noteBook {
-        background-image: url(assets/uploaded/Notizbuch.png);
+        background-image: url(uploaded/Notizbuch.png);
         background-size: cover;
         background-color: transparent;
         height: 100px;
@@ -1617,7 +1617,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .noteBook:hover {
-        background-image: url(assets/uploaded/Notizbuch_hover.png);
+        background-image: url(uploaded/Notizbuch_hover.png);
         background-size: cover;
         background-color: transparent;
         cursor: pointer;
@@ -1627,7 +1627,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .glas {
-        background-image: url(assets/uploaded/glas.png);
+        background-image: url(uploaded/glas.png);
         background-size: cover;
         background-color: transparent;
         height: 50px;
@@ -1636,7 +1636,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .glas:hover {
-        background-image: url(assets/uploaded/glas.png);
+        background-image: url(uploaded/glas.png);
         background-size: cover;
         background-color: transparent;
         height: 50px;
@@ -1646,7 +1646,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .fragefenster {
-        background-image: url(assets/uploaded/fragezeichen.png);
+        background-image: url(uploaded/fragezeichen.png);
         background-size: cover;
         background-color: transparent;
         height: 50px;
@@ -1766,7 +1766,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .serviette {
-        background-image: url(assets/uploaded/serviette.png);
+        background-image: url(uploaded/serviette.png);
         background-size: cover;
         background-color: transparent;
         height: 50px;
@@ -1775,7 +1775,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .serviette:hover {
-        background-image: url(assets/uploaded/serviette.png);
+        background-image: url(uploaded/serviette.png);
         background-size: cover;
         background-color: transparent;
         height: 50px;
@@ -1879,7 +1879,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .siegel {
-        background-image: url(assets/uploaded/siegelwachs.png);
+        background-image: url(uploaded/siegelwachs.png);
         background-size: cover;
         background-color: transparent;
         height: 50px;
@@ -1888,7 +1888,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .siegel:hover {
-        background-image: url(assets/uploaded/siegelwachs.png);
+        background-image: url(uploaded/siegelwachs.png);
         background-size: cover;
         background-color: transparent;
         height: 50px;
@@ -1898,7 +1898,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .handschuh {
-        background-image: url(assets/uploaded/leder_handschuh.png);
+        background-image: url(uploaded/leder_handschuh.png);
         background-size: cover;
         background-color: transparent;
         position: relative;
@@ -1910,7 +1910,7 @@ endstation :nth-child(4) { /*Story3*/
     }
 
     .handschuh:hover {
-        background-image: url(assets/uploaded/leder_handschuh.png);
+        background-image: url(uploaded/leder_handschuh.png);
         background-size: cover;
         background-color: transparent;
         height: 300px;
