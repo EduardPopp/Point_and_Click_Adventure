@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Endstation</title>
+</head>
+<body id="endstation" onload="endstation();check_inventar();">
+    <div class="HauptContainerWaggon">
+        <div>
+            <h2 align="center">Endstation</h2>
+        </div>
+        <endstation>
+            <div id="fragecontainer" class="fragecontainer">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button class="entscheidungsbutton" onClick="check_ende('endstation_ende')">Weiter</button>
+            </div>
+            <div id="endstation_ende" class="fragecontainer" style="display:none">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button class="entscheidungsbutton" onClick="Statistik('zurueck_hauptmenue')">Weiter</button>
+            </div>
+            <div id="zurueck_hauptmenue" class="fragecontainer" style="display:none">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button class="entscheidungsbutton" onClick="Hauptmenue()">Beenden</button>
+            </div>
+            <div id="endstation_story" class="Story_container"></div>
+        </endstation>
+        </div>
+    </div>
+</body>
+<script src="./textadv.js"></script>
+</html>

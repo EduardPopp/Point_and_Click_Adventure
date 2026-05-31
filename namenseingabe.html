@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Namenseingabe</title>
+</head>
+<body id="namens_plakette" onload="wohin();ort_beschreibung()">
+    <div class="HauptContainer">
+        <h2 align="center" id="wohin"></h2>
+    </div>
+    <div class="HauptContainer_name">
+        <div id="Ortsbeschreibung_id" class="Ortsbeschreibung_klasse"></div>
+    </div>
+     <div class="detectiv">
+    </div>
+    <div class="namensContainer">
+        <div class="namensBox">
+            <div class="form">
+                <input id="namenseingabe" class="Formulareingabe" type="text" placeholder="Namen eingeben"></input>
+                <div align="center">
+                    <button class="Formularbutton" onClick="Namen_abfangen()">weiter</button>
+                    <button class="Formularbutton" onClick="zur_Karte()">zurück</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./textadv.js"></script>
+</html>

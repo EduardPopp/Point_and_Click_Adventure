@@ -1,0 +1,2037 @@
+
+/****************************************************/
+/*              globale css einstellungen           */
+/****************************************************/
+/*ab hier sind alle deklarationen für 24" (1920x1080px) Monitore*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+button {
+    font-family : inherit;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    src: url(Palatino\ Linotype.ttf);
+}
+
+body {
+    font-family: 'Palatino';
+    font-size: larger;
+}
+/****************************************************/
+/*Hintergrundbilder jeder Szene wird hier festgelegt*/
+/****************************************************/
+#startmenu {
+    background-image: url(./startmenu.jpeg);
+    background-size: cover;
+}
+
+#Karte {
+    background-image: url(./Karte_Spiel.png);
+}
+
+#namens_plakette {
+    background-image: url(./startmenuname.jpg);
+    background-size: cover;
+}
+
+#Einleitung {
+    background-image: url(./startmenu.jpeg);
+    background-size: cover;
+}
+
+#erster_waggon {
+    background-image: url(./Wagen1.jpeg);
+    background-size: cover;
+}
+
+#secndWag {
+    background-image: url(./Wagen2.jpeg);
+    background-size: cover; 
+}
+
+#Waggondrei {
+    background-image: url(./Wagen3.jpeg);
+    background-size: cover; 
+}
+
+#Waggonvier {
+    background-image: url(./Wagen4.jpeg);
+    background-size: cover; 
+}
+
+#Waggonfuenf {
+    background-image: url(./Wagen3.jpeg);
+    background-size: cover; 
+}
+
+#endstation {
+    background-image: url(./startmenu.jpeg);
+    background-size: cover; 
+}
+#impressum {
+    background-color: #643735; 
+    color: #cec498;
+    max-width: 1920px;
+}
+/****************************************************/
+/*          Navigationsleiste im Hauptmenü          */
+/****************************************************/
+nav {
+    flex: 1;
+}
+
+.navigations_links {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.navigations_link {
+    display:flex;
+}
+
+.navigations_button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: large;
+}
+
+.navigations_button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    background-color: brown;
+    width: 50%;
+    margin: auto;
+    height: 40px;
+}
+/****************************************************/
+/*             css-deklarationen startmenu           */
+/****************************************************/
+.bodyContainer {
+    display: flex;
+    width: fit-content;
+    height: 845px;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    justify-content: flex-end;
+}
+
+.titelleiste {   
+    max-height: fit-content;
+    color: white;
+}
+/****************************************************/
+/*        css-deklarationen Karte - navigation        */
+/****************************************************/
+.buttonback {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    top: 800px;
+    left: 900px;
+    height: 175px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.zurueckbutton {
+    background-color: transparent;
+    border: 1px solid;
+    border-color: blanchedalmond;
+    color: white;
+    font-size: larger;
+}
+
+.zurueckbutton:hover {
+    color: white;
+    cursor: pointer;
+}
+/****************************************************/
+/*         css-deklarationen Karte - Kartebtn           */
+/****************************************************/
+.pinnadel {
+    background-color: transparent;
+    font-size: small;
+    border: none;
+    background-image: url(./pinKarte.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.pinnadel:hover {
+    background-image: url(./pinKarte_hover.png);
+    cursor: pointer;
+}
+
+.pinnadel_deaktiviert {
+    background-color: transparent;
+    font-size: small;
+    border: none;
+    background-image: url(./pinKarte.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.pinnadel_deaktiviert:hover {
+    background-image: url(./pinKarte_deaktiviert.png);
+    cursor: pointer;
+}
+/****************************************************/
+/*        css-deklarationen Karte - pinlocations      */
+/****************************************************/
+section {
+    position: relative;
+}
+
+section div {
+    position: absolute;
+}
+
+    
+section :nth-child(1) { /*Pin New York*/
+    top: 355px;
+    left: 475px;
+    color: black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+
+section :nth-child(2) { /*Pin Berlin*/
+    top: 300px;
+    left: 880px;
+    color: black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+section :nth-child(3) { /*Pin Beijing*/
+    top: 380px;
+    left: 1320px;
+    color: black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+section :nth-child(4) { /*Pin Sao Paulo*/
+    top: 630px;
+    left: 600px;
+    color: black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+section :nth-child(5) { /*Pin Johannesburg*/
+    top: 690px;
+    left: 950px;
+    color: black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+section :nth-child(6) { /*Pin Sydney*/
+    top: 730px;
+    left: 1470px;
+    color: black;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+backbuttonsec {
+    position: relative;
+}
+
+backbuttonsec div {
+    position: absolute;
+}
+
+backbuttonsec :nth-child(1) {
+    top: 850px;
+    left: 1650px;
+}
+.buttonbackKarte {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    height: 96px;
+    top: 400px;
+    left: -20px;
+    flex-direction: column;
+    padding-left: 1800px;
+    justify-content: flex-end;
+}
+/****************************************************/
+/*        css-deklarationen namenseingabe - main        */
+/****************************************************/
+.namensgebung_container {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    height: 50px;
+    width: 70px;
+    top: -200px;
+    left: -500px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.namensgebung_zurueck {
+    background-color: transparent;
+    border: 1px solid;
+    border-color: blanchedalmond;
+    color: white;
+    font-size: larger;
+}
+
+.namensgebung_zurueck:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.HauptContainer {
+    color: white; /*color ist textfarbe*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.HauptContainer_name {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+
+.namensContainer {
+    color: white;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 200px;
+    width: 1200px;
+    height: 100px;
+    padding-left: 1600px;
+}
+
+.namensBox {
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: -760px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+.Ortsbeschreibung_klasse {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    width: 500px;
+    overflow: auto;
+    height: 20.6em;
+    line-height: 1.8em;
+}
+
+
+.form {
+    border: 2px solid;
+    background-color: #cec498;
+}
+
+.Formulareingabe {
+    border: 2px solid;
+    color: black;
+    background-color: #e9e4d1;
+    border-color: beige;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Formularbutton {
+    font-size: larger;
+}
+/****************************************************/
+/*          css-deklarationen Einleitung - main          */
+/****************************************************/
+.updates_zurueck {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    height: 96px;
+    width: 200px;
+    top: 600px;
+    left: 1200px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.EinleitungContainer {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    width: 600px;
+    overflow: auto;
+    height: 30em;
+    line-height: 1.8em;
+}
+/****************************************************/
+/*      css-deklarationen section für Karte zurück    */
+/****************************************************/
+backbuttonsecsoon {
+    position: relative;
+}
+
+backbuttonsecsoon div {
+    position: absolute;
+}
+
+backbuttonsecsoon :nth-child(1) {
+    top: 950px;
+    left: 800px;
+}
+/****************************************************/
+/*      css-deklarationen erster Waggon - main      */
+/****************************************************/
+.HauptContainerWaggon {
+    color: #cec498;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.Story_container {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    width: 500px;
+    overflow: auto;
+    height: 15em;
+    padding-left: 100px;
+    line-height: 1.8em;
+}
+/****************************************************/
+/*     css-deklarationen erster Waggon - section    */
+/****************************************************/
+/*Notizbuch css Anfang*/
+.flexnotizbuch {
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    padding-top: 60px;
+    padding-left: 100px;
+    flex-wrap: nowrap;
+    background-image: url(Notizbuch_offen.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    color:white;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: #cec498;
+    left: 600px;
+    top: -250px;
+}
+#notizbuch {
+    width: 800px;
+    height: 600px;
+}
+/*linke Seite aka Inventar*/
+.links {
+    width: 300px;
+    overflow-y: scroll;
+    height: 450px;
+}
+/*rechte Seite aka Waggons, Schließknopf, Statistiken*/
+.rechts {
+    width: 200px;
+    height: 600px;
+}
+
+.titel {
+    width: 300px;
+    height: 30px;
+}
+
+.waggons {
+    width: 300px;
+    height: 200px;
+}
+
+.schliesser {
+    margin: 5px;
+    float: right;
+    font-size: medium;
+}
+.statistik {
+    width: 300px;
+    height: 300px;
+}
+.hauptseite {
+    float: right;
+}
+/*Notizbuch css ende*/
+/*Tresor css anfang*/
+.tresor {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.tresor:hover {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+.eingabe_code {
+    width: 400px;
+}
+
+.eingabefeld_tresor {
+    height: 100px;
+}
+
+#tresorfeld {
+    font-size: larger;
+}
+
+.flextresor {
+    padding: -10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color:white;
+    background-color: dimgrey;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: #cec498;
+    left: 700px;
+    top: -250px;
+}
+
+.flexoffentresor {
+    padding: -10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color:white;
+    background-color: dimgrey;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: #cec498;
+    left: 400px;
+    top: -250px;
+}
+
+
+.steuerung_tresor {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.steuerung_offener_tresor {
+    background-image: url(tresor_offen.jpeg);
+    background-size: cover;
+    width: 1200px;
+    height: 800px;
+}
+
+#tresor_container {
+    width: 300px;
+    height: 200px;
+}
+
+.offener_tresor {
+    width: 800px;
+    height: 800px;
+}
+/*Oberfläche Waggon 1*/
+story {
+    position: relative;
+}
+
+story div {
+    position: absolute;
+    display: flex;
+}
+
+story :nth-child(1) { /*glas*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 1290px;
+}
+
+story :nth-child(2) { /*fragefenster 1*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+
+story :nth-child(3) { /*fragefenster 2*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+story :nth-child(4) { /*fragefenster 3*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+story :nth-child(5) { /*Notizbuch*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 1600px;
+}
+
+story :nth-child(6) { /*fragefenster_oeffner*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 650px;
+}
+
+story :nth-child(7) { /*Tresor minispiel*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 610px;
+    left: 310px;
+}
+
+.noteBook {
+    background-image: url(./Notizbuch.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+
+.noteBook:hover {
+    background-image: url(./Notizbuch_hover.png);
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+
+.glas {
+    background-image: url(./glas.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.glas:hover {
+    background-image: url(./glas.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.fragefenster {
+    background-image: url(./fragezeichen.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.entscheidungsbutton {
+    width: 120px;
+    height: 80px;
+    /* border: none;
+    background-color: transparent; */
+}
+
+.entscheidungsbutton:hover {
+    /* border: none;
+    background-color: transparent; */
+    cursor: pointer;
+}
+
+.ContainerWaggonEins {
+    color: #e9e4d1;
+}
+
+.HauptContainerWaggonZwei {
+    color: #e9e4d1;
+}
+
+.HauptContainerWaggonDrei {
+    color: #e9e4d1;
+}
+
+.HauptContainerWaggonVier {
+    color: #e9e4d1;
+}
+
+.fragecontainer {
+    background-color: #cec498;
+    border: 2px solid;
+    color:black;
+    padding: 10px;
+    height: 200px;
+    width: 600px;
+}
+
+.Story_container {
+    padding-left: 10px;
+    color:black;
+    background-color: rgba(206, 196, 152, 0.8);
+}
+/****************************************************/
+/*          css-deklarationen ab Waggon 2           */
+/****************************************************/
+storyzwei {
+    position: relative;
+}
+
+storyzwei div {
+    position: absolute;
+    display: flex;
+}
+
+storyzwei :nth-child(1) { /*serviette*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 800px;
+    left: 1290px;
+}
+
+storyzwei :nth-child(2) { /*Fragecontainer 1*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyzwei :nth-child(3) { /*Fragecontainer 2*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyzwei :nth-child(4) { /*Fragecontainer 3*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyzwei :nth-child(5) { /*Notizbuch*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 1600px;
+}
+
+storyzwei :nth-child(6) { /*fragefenster_oeffnen*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 650px;
+}
+
+storyzwei :nth-child(7) { /*Zurück zum vorherigen Waggon*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 100px;
+}
+
+.serviette {
+    background-image: url(./serviette.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.serviette:hover {
+    background-image: url(./serviette.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+/****************************************************/
+/*         css-deklarationen Waggon3 - main         */
+/****************************************************/
+storydrei {
+    position: relative;
+}
+
+storydrei div {
+    position: absolute;
+    display: flex;
+}
+
+storydrei :nth-child(1) { /*Notizbuch*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 1600px;
+}
+
+storydrei :nth-child(2) { /*Zurück zum vorherigen Waggon*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 100px;
+}
+
+storydrei :nth-child(3) { /*weiter zum nächsten Waggon*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 800px;
+    left: 1800px;
+}
+/****************************************************/
+/*         css-deklarationen Waggon4 - main         */
+/****************************************************/
+storyvier {
+    position: relative;
+}
+
+storyvier div {
+    position: absolute;
+    display: flex;
+}
+
+storyvier :nth-child(1) { /*Fragecontainer 1*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyvier :nth-child(2) { /*Fragecontainer 3*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyvier :nth-child(3) { /*Notizbuch*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 1600px;
+}
+
+storyvier :nth-child(4) { /*fragefenster_oeffnen*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 650px;
+}
+
+storyvier :nth-child(5) { /*Zurück zum vorherigen Waggon*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 100px;
+}
+
+storyvier :nth-child(6) { /*siegelwachs*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 910px;
+    left: 300px;
+}
+
+.siegel {
+    background-image: url(./siegelwachs.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+.siegel:hover {
+    background-image: url(./siegelwachs.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.handschuh {
+    background-image: url(./leder_handschuh.png);
+    background-size: cover;
+    background-color: transparent;
+    position: relative;
+    top: 350px;
+    left: 280px;
+    height: 300px;
+    width: 300px;
+    border: none;
+}
+
+.handschuh:hover {
+    background-image: url(./leder_handschuh.png);
+    background-size: cover;
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+}
+/****************************************************/
+/*         css-deklarationen Waggon4 - main         */
+/****************************************************/
+storyfuenf {
+    position: relative;
+}
+
+storyfuenf div {
+    position: absolute;
+    display: flex;
+}
+
+storyfuenf :nth-child(1) { /*Fragecontainer 1*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyfuenf :nth-child(2) { /*Fragecontainer 2*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyfuenf :nth-child(3) { /*Fragecontainer 3*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+storyfuenf :nth-child(4) { /*Notizbuch*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 1600px;
+}
+
+storyfuenf :nth-child(5) { /*fragefenster_oeffnen*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 650px;
+}
+
+storyfuenf :nth-child(6) { /*Zurück zum vorherigen Waggon*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 750px;
+    left: 100px;
+}
+/*Endstation css*/
+endstation {
+    position: relative;
+}
+
+endstation div {
+    position: absolute;
+    display: flex;
+}
+
+endstation :nth-child(1) { /*Fragecontainer 1*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 650px;
+    left: 650px;
+}
+
+endstation :nth-child(2) { /*Story1*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 150px;
+    left: 650px;
+}
+endstation :nth-child(3) { /*Story3*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 100px;
+    left: 710px;
+}
+endstation :nth-child(4) { /*Story3*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 100px;
+    left: 710px;
+}
+/****************************************************/
+/*Css für das Impressum                             */
+/****************************************************/
+.impressum_parent {
+    position: absolute;
+}
+.impressum_container {
+    position: relative;
+    top: 1400px;
+    left: 1660px;
+}
+.impressum_zurueck {
+    font-size: large;
+    color: #e9e4d1;
+    background-color: transparent;
+}
+.impressum_zurueck:hover {
+    font-size: large;
+    color: white;
+    cursor: pointer;
+    border-color: white;
+}
+/****************************************************/
+/*Css für Monitore die 1440px breit sind            */
+/****************************************************/
+@media all and (width: 1440px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    button {
+        font-family : inherit;
+    }
+
+    @font-face {
+        font-family: 'Palatino';
+        src: url(Palatino\ Linotype.ttf);
+    }
+    body {
+        font-family: 'Palatino';
+        font-size: larger;
+    }
+    /****************************************************/
+    /*Hintergrundbilder jeder Szene wird hier festgelegt*/
+    /****************************************************/
+    #startmenu {
+        background-image: url(./startmenu.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #Karte {
+        background-image: url(./Karte_Spiel_1440.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #namens_plakette {
+        background-image: url(./startmenuname.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #Einleitung {
+        background-image: url(startmenu.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #erster_waggon {
+        background-image: url(./Wagen1.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #secndWag {
+        background-image: url(./Wagen2.jpeg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    #Waggondrei {
+        background-image: url(./Wagen3.jpeg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    #Waggonvier {
+        background-image: url(./Wagen4.jpeg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    #Waggonfuenf {
+        background-image: url(./Wagen3.jpeg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    #endstation {
+        background-image: url(./startmenu.jpeg);
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+    /****************************************************/
+    /*        css-deklarationen Karte - navigation        */
+    /****************************************************/
+    .buttonback {
+        display: flex;
+        width: fit-content;
+        height: 175px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .zurueckbutton {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: blanchedalmond;
+        color: white;
+        font-size: larger;
+    }
+
+    .zurueckbutton:hover {
+        color: white;
+        cursor: pointer;
+    }
+    /****************************************************/
+    /*         css-deklarationen Karte - Kartebtn           */
+    /****************************************************/
+    .pinnadel {
+        background-color: transparent;
+        font-size: small;
+        border: none;
+        background-image: url(./pinKarte.png);
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 50px;
+    }
+
+    .pinnadel:hover {
+        background-image: url(./pinKarte_hover.png);
+        cursor: pointer;
+    }
+
+    .pinnadel_deaktiviert {
+        background-color: transparent;
+        font-size: small;
+        border: none;
+        background-image: url(./pinKarte.png);
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 50px;
+    }
+
+    .pinnadel_deaktiviert:hover {
+        background-image: url(./pinKarte_deaktiviert.png);
+        cursor: pointer;
+    }
+    /****************************************************/
+    /*        css-deklarationen Karte - pinlocations      */
+    /****************************************************/
+    section {
+        position: relative;
+    }
+
+    section div {
+        position: absolute;
+    }
+
+    section :nth-child(1) { /*Pin New York*/
+        top: 280px;
+        left: 360px;
+        color: black;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+
+    section :nth-child(2) { /*Pin Berlin*/
+        top: 240px;
+        left: 650px;
+        color: black;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    section :nth-child(3) { /*Pin Beijing*/
+        top: 300px;
+        left: 980px;
+        color: black;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    section :nth-child(4) { /*Pin Sao Paulo*/
+        top: 500px;
+        left: 450px;
+        color: black;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    section :nth-child(5) { /*Pin Johannesburg*/
+        top: 550px;
+        left: 710px;
+        color: black;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    section :nth-child(6) { /*Pin Sydney*/
+        top: 600px;
+        left: 1090px;
+        color: black;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: black;
+    }
+    backbuttonsec {
+        position: relative;
+    }
+
+    backbuttonsec div {
+        position: absolute;
+    }
+
+    backbuttonsec :nth-child(1) {
+        top: 740px;
+        left: 1250px;
+    }
+    .buttonbackKarte {
+        display: flex;
+        width: fit-content;
+        position: relative;
+        height: 96px;
+        top: 400px;
+        left: -20px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    /****************************************************/
+    /*        css-deklarationen namenseingabe - main        */
+    /****************************************************/
+    .HauptContainer {
+        color: white; /*color ist textfarbe*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .HauptContainer_name {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+
+    .namensContainer {
+        color: white;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-top: 200px;
+        width: 1200px;
+        height: 100px;
+        padding-left: 1600px;
+    }
+
+    .namensBox {
+        display: flex;
+        position: relative;
+        top: 100px;
+        left: -960px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: space-between;
+    }
+
+    .Ortsbeschreibung_klasse {
+        display: block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        width: 500px;
+        overflow: auto;
+        height: 20.6em;
+        line-height: 1.8em;
+    }
+
+    .namensgebung_container {
+        display: flex;
+        width: fit-content;
+        position: relative;
+        height: 96px;
+        top: -100px;
+        left: -300px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .namensgebung_zurueck {
+        background-color: transparent;
+        border: 1px solid;
+        border-color: blanchedalmond;
+        color: white;
+        font-size: larger;
+    }
+
+    .namensgebung_zurueck:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .form {
+        border: 2px solid;
+        background-color: #cec498;
+    }
+
+    .Formulareingabe {
+        border: 2px solid;
+        color: black;
+        background-color: #e9e4d1;
+        border-color: beige;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .Formularbutton {
+        font-size: larger;
+    }
+    /****************************************************/
+    /*      css-deklarationen section für Karte zurück    */
+    /****************************************************/
+    backbuttonsecsoon {
+        position: relative;
+    }
+
+    backbuttonsecsoon div {
+        position: absolute;
+    }
+
+    backbuttonsecsoon :nth-child(1) {
+        top: -350px;
+        left: -700px;
+    }
+    .updates_zurueck {
+        display: flex;
+        width: fit-content;
+        position: relative;
+        height: 96px;
+        width: 200px;
+        top: 600px;
+        left: 1200px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    /****************************************************/
+    /*     css-deklarationen erster Waggon - section    */
+    /****************************************************/
+    /*Notizbuch css Anfang*/
+    .flexnotizbuch {
+        display: flex;
+        flex-direction: row;
+        margin:auto;
+        padding-top: 60px;
+        padding-left: 100px;
+        flex-wrap: nowrap;
+        background-image: url(Notizbuch_offen.jpeg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        color:white;
+        -webkit-text-stroke: 0.5px;
+        -webkit-text-stroke-color: #cec498;
+        left: 330px;
+        top: -250px;
+    }
+
+    #notizbuch {
+        width: 800px;
+        height: 600px;
+    }
+    /*linke Seite aka Inventar*/
+    .links {
+        width: 300px;
+        overflow-y: scroll;
+        height: 450px;
+    }
+    /*rechte Seite aka Waggons, Schließknopf, Statistiken*/
+    .rechts {
+        width: 200px;
+        height: 600px;
+    }
+
+    .titel {
+        width: 300px;
+        height: 30px;
+    }
+
+    .waggons {
+        width: 300px;
+        height: 200px;
+    }
+
+    .schliesser {
+        margin: 5px;
+        float: right;
+        font-size: medium;
+    }
+    .statistik {
+        width: 300px;
+        height: 300px;
+    }
+    /*Notizbuch css ende*/
+    /*Tresor css anfang*/
+    .tresor {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: transparent;
+    }
+
+    .tresor:hover {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        border: transparent;
+        cursor: pointer;
+    }
+
+    .eingabe_code {
+        padding: 10px;
+        width: 400px;
+        height: 100px;
+}
+
+    .eingabefeld_tresor {
+        height: 100px;
+}
+
+    #tresorfeld {
+        font-size: larger;
+    }
+
+    .flextresor {
+        padding: -10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color:white;
+        background-color: dimgrey;
+        -webkit-text-stroke: 0.5px;
+        -webkit-text-stroke-color: #cec498;
+        left: 530px;
+        top: -200px;
+    }
+
+    .flexoffentresor {
+        padding: -10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        color:white;
+        background-color: dimgrey;
+        -webkit-text-stroke: 0.5px;
+        -webkit-text-stroke-color: #cec498;
+        left: 150px;
+        top: -300px;
+    }
+
+    .steuerung_tresor {
+        display: flex;
+        padding: 10px;
+        width: 400px;
+        height: 100px;
+        justify-content: space-around;
+    }
+
+    .steuerung_offener_tresor {
+        background-image: url(tresor_offen.jpeg);
+        background-size: cover;
+        width: 1200px;
+        height: 800px;
+    }
+
+    #tresor_container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .offener_tresor {
+        width: 800px;
+        height: 800px;
+    }
+    /*Oberfläche Waggon 1*/
+    story {
+        position: relative;
+    }
+
+    story div {
+        position: absolute;
+        display: flex;
+    }
+
+    story :nth-child(1) { /*glas*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 540px;
+        left: 970px;
+    }
+
+    story :nth-child(2) { /*fragefenster 1*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    story :nth-child(3) { /*fragefenster 2*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    story :nth-child(4) { /*fragefenster 3*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    story :nth-child(5) { /*Notizbuch*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 650px;
+        left: 1200px;
+    }
+
+    story :nth-child(6) { /*fragefenster_oeffner*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 450px;
+    }
+
+    story :nth-child(7) { /*Tresor minispiel*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 430px;
+        left: 220px;
+    }
+
+    .noteBook {
+        background-image: url(./Notizbuch.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 100px;
+        width: 100px;
+        border: none;
+    }
+
+    .noteBook:hover {
+        background-image: url(./Notizbuch_hover.png);
+        background-size: cover;
+        background-color: transparent;
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+        border: none;
+    }
+
+    .glas {
+        background-image: url(./glas.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: none;
+    }
+
+    .glas:hover {
+        background-image: url(./glas.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .fragefenster {
+        background-image: url(./fragezeichen.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .entscheidungsbutton {
+        width: 120px;
+        height: 80px;
+        /* border: none;
+        background-color: transparent; */
+    }
+
+    .entscheidungsbutton:hover {
+        /* border: none;
+        background-color: transparent; */
+        cursor: pointer;
+    }
+    .ContainerWaggonEins {
+        color: #e9e4d1;
+    }
+    
+    .HauptContainerWaggonZwei {
+        color: #e9e4d1;
+    }
+    
+    .HauptContainerWaggonDrei {
+        color: #e9e4d1;
+    }
+    
+    .HauptContainerWaggonVier {
+        color: #e9e4d1;
+    }
+    
+    .fragecontainer {
+        background-color: #cec498;
+        border: 2px solid;
+        color: black;
+        padding: 10px;
+        height: 200px;
+        width: 600px;
+    }
+    
+    .Story_container {
+        padding-left: 10px;
+        color: black;
+        background-color: rgba(206, 196, 152, 0.8);
+    }
+    /****************************************************/
+    /*          css-deklarationen ab Waggon 2           */
+    /****************************************************/
+    storyzwei {
+        position: relative;
+    }
+
+    storyzwei div {
+        position: absolute;
+        display: flex;
+    }
+    
+    storyzwei :nth-child(1) { /*serviette*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 580px;
+        left: 950px;
+    }
+    
+    storyzwei :nth-child(2) { /*Fragecontainer 1*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyzwei :nth-child(3) { /*Fragecontainer 2*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyzwei :nth-child(4) { /*Fragecontainer 3*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyzwei :nth-child(5) { /*Notizbuch*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 650px;
+        left: 1200px;
+    }
+
+    storyzwei :nth-child(6) { /*fragefenster_oeffnen*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 450px;
+    }
+
+    storyzwei :nth-child(7) { /*Zurück zum vorherigen Waggon*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 100px;
+    }
+
+    .serviette {
+        background-image: url(./serviette.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: none;
+    }
+
+    .serviette:hover {
+        background-image: url(./serviette.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+    }
+    /****************************************************/
+    /*         css-deklarationen Waggon3 - main         */
+    /****************************************************/
+    storydrei {
+        position: relative;
+    }
+
+    storydrei div {
+        position: absolute;
+        display: flex;
+    }
+
+    storydrei :nth-child(1) { /*Notizbuch*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 1200px;
+    }
+
+    storydrei :nth-child(2) { /*Zurück zum vorherigen Waggon*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 100px;
+    }
+
+    storydrei :nth-child(3) { /*weiter zum nächsten Waggon*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 780px;
+        left: 1350px;
+    }
+    /****************************************************/
+    /*         css-deklarationen Waggon4 - main         */
+    /****************************************************/
+    storyvier {
+        position: relative;
+    }
+
+    storyvier div {
+        position: absolute;
+        display: flex;
+    }
+
+    storyvier :nth-child(1) { /*Fragecontainer 1*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyvier :nth-child(2) { /*Fragecontainer 3*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyvier :nth-child(3) { /*Notizbuch*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 800px;
+        left: 1200px;
+    }
+
+    storyvier :nth-child(4) { /*fragefenster_oeffnen*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 650px;
+    }
+
+    storyvier :nth-child(5) { /*Zurück zum vorherigen Waggon*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 850px;
+        left: 100px;
+    }
+
+    storyvier :nth-child(6) { /*siegelwachs*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 665px;
+        left: 215px;
+    }
+
+    .siegel {
+        background-image: url(./siegelwachs.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: none;
+    }
+
+    .siegel:hover {
+        background-image: url(./siegelwachs.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .handschuh {
+        background-image: url(./leder_handschuh.png);
+        background-size: cover;
+        background-color: transparent;
+        position: relative;
+        top: 320px;
+        left: 250px;
+        height: 300px;
+        width: 300px;
+        border: none;
+    }
+
+    .handschuh:hover {
+        background-image: url(./leder_handschuh.png);
+        background-size: cover;
+        background-color: transparent;
+        height: 300px;
+        width: 300px;
+        border: none;
+        cursor: pointer;
+    }
+    /****************************************************/
+    /*         css-deklarationen Waggon4 - main         */
+    /****************************************************/
+    storyfuenf {
+        position: relative;
+    }
+
+    storyfuenf div {
+        position: absolute;
+        display: flex;
+    }
+
+    storyfuenf :nth-child(1) { /*Fragecontainer 1*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyfuenf :nth-child(2) { /*Fragecontainer 2*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyfuenf :nth-child(3) { /*Fragecontainer 3*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    storyfuenf :nth-child(4) { /*Notizbuch*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 1200px;
+    }
+
+    storyfuenf :nth-child(5) { /*fragefenster_oeffnen*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 750px;
+        left: 650px;
+    }
+
+    storyfuenf :nth-child(6) { /*Zurück zum vorherigen Waggon*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 850px;
+        left: 100px;
+    }
+    /*Endstation css*/
+    endstation {
+        position: relative;
+    }
+
+    endstation div {
+        position: absolute;
+        display: flex;
+    }
+
+    endstation :nth-child(1) { /*Fragecontainer 1*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+
+    endstation :nth-child(2) { /*Story1*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+    endstation :nth-child(3) { /*Story3*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 550px;
+        left: 450px;
+    }
+    endstation :nth-child(4) { /*story*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        top: 150px;
+        left: 500px;
+    }
+    /****************************************************/
+    /*Css für das Impressum                             */
+    /****************************************************/
+    .impressum_container {
+        position: relative;
+        left: 1350px;
+    }
+    .impressum_zurueck {
+        font-size: large;
+        color: #e9e4d1;
+        background-color: transparent;
+    }
+    .impressum_zurueck:hover {
+        font-size: large;
+        color: white;
+        cursor: pointer;
+        border-color: white;
+    }
+}

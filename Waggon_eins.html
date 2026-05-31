@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Waggon Eins</title>
+</head>
+<body id="erster_waggon" onload="Story_fortsetzen();lade_initialContainer();lade_handschuh();lade_glas();gefundene_items();geoeffnete_tresore();button_status();check_inventar();">
+    <div class="HauptContainerWaggon">
+        <div class="ContainerWaggonEins">
+            <h2 align="center">Waggon 1: Schlafwaggon</h2>
+        </div>
+        <story>
+            <div>
+                <button id="glas" class="glas" onClick="Glas_aufheben();"></button>
+            </div>
+            <div id="fragecontainer" class="fragecontainer">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button id="naechsterWaggon" class="entscheidungsbutton" onClick="Waggon_zwei()">Das Abteil verlassen</button>
+                <button id="gespraechPersonId" class="entscheidungsbutton" onClick="gespraechPersonEins('talkWagOne')">Die Frau ansprechen</button>
+            </div>
+            <div id="talkWagOne" class="fragecontainer" style="display:none">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button id="nextTalkWag" class="entscheidungsbutton" onClick="askPersOne('askWagOne')">Die Frau beruhigen</button>
+                <button id="nextAskWag" class="entscheidungsbutton" onClick="fragefenster_schliessen('talkWagOne')">Abteil durchsuchen</button>
+            </div>
+            <div id="askWagOne" class="fragecontainer" style="display:none">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button class="entscheidungsbutton" onClick="fragefenster_schliessen();">Das Abteil durchsuchen</button>
+                <button class="entscheidungsbutton" onClick="Waggon_zwei()">Das Abteil verlassen</button>
+            </div>
+            <div>
+                <button class="noteBook" onClick="notizbuch_auf_zu();gefundene_items();geoeffnete_tresore();check_inventar();duplikate_entfernen();zeige_inventar();">Notizbuch</button>
+            </div>
+            <div>
+                <button style="display:none;" id="fragefenster_oeffner" class="fragefenster" onClick="oeffne_fragefenster()"></button>
+            </div>
+            <div>
+                <button id="tresor" class="tresor" onClick="oeffne_tresor()">o</button>
+            </div>
+        </story>
+        <div id="Story_container" class="Story_container"></div>
+        <div id="tresor_container" class="tresor_container" style="display:none;">
+            <div class="flextresor">
+                <div align="center" class="eingabe_code">
+                    <input id="tresorfeld" type="text"></input>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="steuerung_tresor">
+                    <p style="width: 400px" id="tresor_falsch"></p>
+                    <div style="display: flex;flex-direction: row;">
+                        <button style="width: 80px; height: 80px;" onClick="tresor_container_schliessen()">Zurück ins Abteil</button>
+                        <button style="width: 80px; height: 80px;" onClick="tresor_offen()">Tresor öffnen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="offener_tresor" class="offener_tresor" style="display:none;">
+            <div class="flexoffentresor">
+                <div class="steuerung_offener_tresor">
+                    <button onClick="tresor_offen_zu()">Zurück ins Abteil</button>
+                    <div>
+                        <button id="handschuh" class="handschuh" onClick="handschuh_aufheben()"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="notizbuch" class="notizbuch" style="display:none;">
+            <div class="flexnotizbuch">
+                <div class="links">
+                    <div class="inventar">
+                        <h3 align="center">Inventar</h3>
+                    </div>
+                    <div id="inventarliste">
+                    </div>
+                </div>
+                <div class="rechts">
+                    <div class="titel">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Waggons
+                        <button class="schliesser" onClick="schliesse_notizbuch()">X</button>
+                    </div>
+                    <div class="waggons" style="padding-left: 20px;">
+                        <button id="notizWaggonEins" onClick="Waggon_eins()">Waggon1</button>
+                        <button id="notizWaggonZwei" onClick="Waggon_zwei()">Waggon2</button>
+                        <button id="notizWaggonDrei" onClick="Waggon_drei()">Waggon3</button>
+                        <button id="notizWaggonVier" onClick="Waggon_vier()">Waggon4</button>
+                        <button id="notizWaggonFuenf" onClick="Waggon_fuenf()">Waggon5</button>
+                    </div>
+                    <div class="statistik">
+                        <h3 align="center">Statistiken</h3>
+                        <table>
+                            <tr>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gegenstände: </td>
+                            <td><p id="gefundene_items"></p></td>
+                            </tr>
+                            <tr>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tresore: </td>
+                            <td><p id ="geoeffnet"></p></td>
+                            </tr>
+                        </table>
+                        <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="hauptseite" onClick="zurueck()">Startseite</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./textadv.js"></script>
+</html>

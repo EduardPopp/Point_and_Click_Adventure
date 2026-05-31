@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Kartenauswahl</title>
+</head>
+<body align="center" id="Karte" style="width:100%%; height:100%%;">
+    <div>
+        <h2 align="center" style="color: #cec498">Wo soll die Reise starten?</h2>
+        <section>
+        <div>
+            <button id="nyc" class="pinnadel" onClick="Entscheide_Ort(this.id)"></button><p>Fahrt "New York"</p>
+            <p id="Ort"></p>
+        </div>
+        <div>
+            <button id="ber" class="pinnadel_deaktiviert" OnClick="kommendes_update()"></button><p>Fahrt "Berlin"</p>
+        </div>
+        <div>
+            <button id="beij" class="pinnadel_deaktiviert" onClick="kommendes_update()"></button><p>Fahrt "Beijing"</p>
+        </div>
+        <div>
+            <button id="spl" class="pinnadel_deaktiviert" onClick="kommendes_update()"></button><p>Fahrt "Sao Paulo"</p>
+        </div>
+        <div>
+            <button id="job" class="pinnadel_deaktiviert" onClick="kommendes_update()"></button><p>Fahrt "Johannesburg"</p>
+        </div>
+        <div>
+            <button id="syd" class="pinnadel_deaktiviert" onClick="kommendes_update()"></button><p>Fahrt "Sydney"</p>
+        </div>
+        </section>
+    </div>
+    <backbuttonsec>
+        <div>
+            <button class="zurueckbutton" onClick="zurueck()">zurück</button>
+        </div>
+    </backbuttonsec>
+</body>
+<script src="./textadv.js"></script>
+</html>

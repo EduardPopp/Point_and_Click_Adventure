@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Waggon Zwei</title>
+</head>
+<body id="secndWag" onload="Story_fortsetzenTwo();lade_story_zwei();lade_serviette();gefundene_items();geoeffnete_tresore();button_status();check_inventar();zeige_inventar();">
+    <br/>
+    <div class="HauptContainerWaggonZwei">
+        <div>
+            <h2 align="center">Waggon 2: Aufenthaltswaggon</h2>
+        </div>
+        <storyzwei>
+            <div>
+                <button id="serviette" class="serviette" onClick="serviette_aufheben()"></button>
+            </div>
+            <div id="fragecontainer" class="fragecontainer">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button id="naechsterWaggon" class="entscheidungsbutton" onClick="Waggon_drei()">Zum Barwaggon gehen</button>
+                <button class="entscheidungsbutton" onClick="gespraechPersonIdTwo('talkWagTwo')">Das Gespräch mit den beiden Männern suchen</button>
+            </div>
+            <div id="talkWagTwo" class="fragecontainer" style="display:none">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button id="nextTalkWag" class="entscheidungsbutton" onClick="fragefenster_schliessen('askWagTwo')">Den Waggon durchsuchen</button>
+                <button id="nextAskWag" class="entscheidungsbutton" onClick="Waggon_drei()">Zum Barwaggon wechseln</button>
+            </div>
+            <div id="askWagTwo" class="fragecontainer" style="display:none">
+                <p align="center" style="width:500px;">Was möchtest du tun?</p>
+                <button class="entscheidungsbutton" onClick="fragefenster_schliessen()">Den Waggon durchsuchen</button>
+                <button class="entscheidungsbutton" onClick="Waggon_drei()">Zum Barwaggon wechseln</button>
+            </div>
+            <div>
+                <button class="noteBook" onClick="notizbuch_auf_zu();gefundene_items();geoeffnete_tresore();check_inventar();duplikate_entfernen();zeige_inventar();">Notizbuch</button>
+            </div>
+            <div>
+                <button style="display:none;" id="fragefenster_oeffner" class="fragefenster" onClick="oeffne_fragefenster()"></button>
+            </div>
+            <div>
+                <button class="backWag" onClick="Waggon_eins()">Vorheriger Waggon</button>
+            </div>
+        </storyzwei>
+        <div id="Story_containerZwei" class="Story_container"></div>
+        <div id="notizbuch" class="notizbuch" style="display:none;">
+            <div class="flexnotizbuch">
+                <div class="links">
+                    <div class="inventar">
+                        <h3 align="center">Inventar</h3>
+                    </div>
+                    <div id="inventarliste">
+                    </div>
+                </div>
+                <div class="rechts">
+                    <div class="titel">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Waggons
+                        <button class="schliesser" onClick="schliesse_notizbuch()">X</button>
+                    </div>
+                    <div class="waggons">
+                        <button id="notizWaggonEins" onClick="Waggon_eins()">Waggon1</button>
+                        <button id="notizWaggonZwei" onClick="Waggon_zwei()">Waggon2</button>
+                        <button id="notizWaggonDrei" onClick="Waggon_drei()">Waggon3</button>
+                        <button id="notizWaggonVier" onClick="Waggon_vier()">Waggon4</button>
+                        <button id="notizWaggonFuenf" onClick="Waggon_fuenf()">Waggon5</button>
+                    </div>
+                    <div class="statistik">
+                        <h3 align="center">Statistiken</h3>
+                        <table>
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gegenstände: </td>
+                                <td><p id="gefundene_items"></p></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tresore: </td>
+                                <td><p id ="geoeffnet"></p></td>
+                            </tr>
+                        </table>
+                        <br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="hauptseite" onClick="zurueck()">Startseite</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./textadv.js"></script>
+</html>
