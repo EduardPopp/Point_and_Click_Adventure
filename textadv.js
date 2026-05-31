@@ -5,7 +5,7 @@
 //##########################################
 function zurueck()
 {
-    window.location.href="Index.html";
+    window.location.href="index.html";
 }
 
 function zur_namenseingabe()
